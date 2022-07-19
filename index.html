@@ -77,31 +77,31 @@
                 />
               </button>
               <form>
-                <ul>
-                  <li>
+                <ul class="form-list">
+                  <li class="form-item" >
                 <label for="name">Имя</label>
                 <input type="text" name="name" id="name">
               </li>
-              <li>
+              <li class="form-item" >
                 <label for="tel">Телефон</label>
                 <input type="tel" name="tel" id="tel">
               </li>
-              <li>
+              <li class="form-item" >
                 <label for="mail">Почта</label>
                 <input type="email" name="mail" id="mail">
               </li>
-              <li>
+              <li class="form-item" >
                 <lebel for="comment">Комментарий</lebel>
                 <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
               </li>
-              <li>
+            </ul>
+               <p class="form-policy">
                 <input type="checkbox" name="policy" id="policy"/>
-                <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
-              </li>
-              <li>
-                <button type="submit">Отправить</button>
-              </li>
-              </ul>
+                <label for="policy">Соглашаюсь с рассылкой и принимаю <a class="form-link" href="">Условия договора</a></label>
+              </p>
+              <p>
+                <button class="form-btn" type="submit">Отправить</button>
+              </p>
               </form>
             </div>
           </div>
