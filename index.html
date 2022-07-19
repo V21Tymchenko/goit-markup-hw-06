@@ -66,7 +66,7 @@
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <p></p>
+              <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
               <button class="close" data-modal-close>
                 <img
                   class="close-icon"
@@ -76,6 +76,33 @@
                   alt="закрыть"
                 />
               </button>
+              <form>
+                <ul>
+                  <li>
+                <label for="name">Имя</label>
+                <input type="text" name="name" id="name">
+              </li>
+              <li>
+                <label for="tel">Телефон</label>
+                <input type="tel" name="tel" id="tel">
+              </li>
+              <li>
+                <label for="mail">Почта</label>
+                <input type="email" name="mail" id="mail">
+              </li>
+              <li>
+                <lebel for="comment">Комментарий</lebel>
+                <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
+              </li>
+              <li>
+                <input type="checkbox" name="policy" id="policy"/>
+                <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+              </li>
+              <li>
+                <button type="submit">Отправить</button>
+              </li>
+              </ul>
+              </form>
             </div>
           </div>
         </div>
@@ -457,6 +484,15 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="subs">
+        <b class="subs-title">Подпишитесь на рассылку</b>
+        <ul>
+          <li class="subs-list"><form  class="subs-form">
+          <input  type="mail" placeholder="E-mail">
+        </form>
+          </li>
+        <li class="subs-list"><button  class="subs-btn" type="submit">Подписаться</button></li>
         </div>
       </div>
     </footer>
