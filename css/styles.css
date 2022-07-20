@@ -87,7 +87,7 @@ ul {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 5000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-web,
 .current {
@@ -292,7 +292,6 @@ ul {
 .form-item:not(:last-child) {
   margin-bottom: 10px;
 }
-
 .form-item label {
   margin-bottom: 4px;
 
@@ -305,7 +304,6 @@ ul {
   resize: none;
   padding: 12px 16px;
 }
-
 .form-item {
   position: relative;
   display: flex;
@@ -353,7 +351,6 @@ ul {
 
   color: rgba(117, 117, 117, 0.5);
 }
-
 .form-icon {
   position: absolute;
   top: 50%;
@@ -363,8 +360,9 @@ ul {
   stroke: inherit;
   height: 18px;
   width: 18px;
-}
 
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 input {
   outline: none;
   cursor: pointer;
@@ -381,6 +379,10 @@ textarea {
 .form-policy-input {
   margin-right: 9px;
 }
+.form-input,
+.form-textarea {
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .form-input:focus,
 .form-textarea:focus {
   border: 1px solid #2196f3;
@@ -395,7 +397,7 @@ textarea {
   width: 15px;
   height: 15px;
   transform: translateX(-2px);
-   background-color: var(--main-color); 
+  background-color: var(--main-color);
 }
 .okay-yes {
   position: absolute;
@@ -404,17 +406,12 @@ textarea {
   appearance: none;
   opacity: 0;
   transform: translateX(-2px);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* input.form-policy-input:focus svg.okay-yes{
-
+.form-policy-input:checked ~ .okay-yes {
   opacity: 1;
-} */
-.form-policy-input:checked ~ .okay-yes{
-  opacity:1;
 }
-
-
 
 .close {
   position: absolute;
@@ -435,6 +432,7 @@ textarea {
   width: 18px;
   height: 18px;
   fill: black;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close:hover .close-icon {
   fill: var(--accent-color);
@@ -563,7 +561,7 @@ textarea {
   justify-content: center;
   align-items: center;
 
-  transition: background-color 5000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .photo-link {
@@ -573,7 +571,7 @@ textarea {
   fill: #afb1b8;
 }
 .photo-link {
-  transition: fill 5000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-link:hover,
 .icon-link:focus {
@@ -603,13 +601,11 @@ textarea {
 .company-accent {
   fill: #afb1b8;
 
-  transition: fill 5000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.company-accent {
-  transition: fill 5000ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .clients-link {
-  transition: border-color 5000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
@@ -783,7 +779,7 @@ textarea {
   padding: 6px 22px;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+    color 2500ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover,
