@@ -7,33 +7,26 @@
     <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/>
+    <link rel="stylesheet" href="./css/styles.css"/>
   </head>
   <body>
-    <header class="page-header">
-      <div class="container main-container">
-        <nav class="main-nav">
-          <a class="logo" href="./index.html"
-            ><span class="logo-web">Web</span>Studio</a>
-          <ul class="main-list">
-            <li class="main-item">
-              <a class="link" href="./index.html">Студия</a>
+    <header class="header">
+      <div class="header__container container">
+        <nav class="header__nav">
+          <a class="header__logo" href="./index.html"><span class="header__logo-web">Web</span>Studio</a>
+          <ul class="header__list">
+            <li class="header__item current-item">
+              <a class="header__link" href="./index.html">Студия</a>
             </li>
-            <li class="main-item current-item">
-              <a class="current link" href="./portfolio.html">Портфолио</a>
+            <li class="header__item">
+              <a class="header__link  current" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="main-item"><a class="link" href="">Контакты</a></li>
+            <li class="header__item"><a class="header__link" href="">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="contact-list">
+        <ul class="header__contact">
           <li class="contact-item">
             <a class="contact" href="mailto:info@devstudio.com">
               <svg class="envelope">
@@ -45,7 +38,8 @@
             <a class="contact" href="tel:+380961111111">
               <svg class="phone">
                 <use href="./image/icons.svg#phone"></use></svg
-              >+38 096 111 11 11</a>
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>

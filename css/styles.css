@@ -8,7 +8,7 @@
 
   --font-family: 'Roboto', sans-serif;
 }
-/* Общие стили */
+/* Cброс стилей от браузера */
 body {
   background-color: var(--main-color);
   color: var(--main-text-color);
@@ -31,15 +31,36 @@ p {
 }
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
   margin: 0px;
 }
 ul {
   margin: 0px;
   padding: 0px;
 }
+img{
+  display:block;
+}
+/* Visually Hidden */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Header */
-.page-header {
+.header {
   border-bottom: 1px solid #ececec;
 }
 .container {
@@ -49,31 +70,31 @@ ul {
 
   margin: 0 auto;
 }
-.main-container {
+.header__container {
   align-items: center;
 }
-.main-container,
-.main-nav,
-.main-list {
+.header__container,
+.header__nav,
+.header__list {
   display: flex;
 }
-.main-nav {
+.header__nav {
   align-items: center;
 }
-.logo,
+.header__logo,
 .logo-studio {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
-.logo {
+.header__logo {
   color: #000000;
 
   margin-right: 93px;
 }
-.link:hover,
-.link:focus,
+.header__link:hover,
+.header__link:focus,
 .address:hover,
 .address:focus,
 .footer-contact:hover,
@@ -81,7 +102,7 @@ ul {
   color: var(--accent-color);
 }
 
-.link {
+.header__link {
   color: var(--main-text-color);
 
   padding-top: 32px;
@@ -89,7 +110,7 @@ ul {
 
   transition: color 5000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.logo-web,
+.header__logo-web,
 .current {
   color: var(--accent-color);
 }
@@ -109,13 +130,13 @@ ul {
   background-color: var(--accent-color);
   border-radius: 2px;
 }
-.link,
+.header__link,
 .team-photo,
 .do-textphoto,
 .work-photo {
   display: block;
 }
-.main-item:not(:last-child) {
+.header__item:not(:last-child) {
   margin-right: 50px;
 }
 .envelope,
@@ -131,7 +152,7 @@ ul {
   height: 16px;
   width: 10px;
 }
-.contact-list {
+.header__contact {
   display: flex;
   margin-left: auto;
 
@@ -158,7 +179,7 @@ ul {
 .contact-item:not(:last-child) {
   margin-right: 50px;
 }
-.main-list,
+.header__list,
 .contact {
   color: var(--secondary-text-color);
 
@@ -786,7 +807,7 @@ textarea {
   padding: 6px 22px;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 2500ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover,
